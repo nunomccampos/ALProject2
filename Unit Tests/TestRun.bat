@@ -6,9 +6,9 @@ REM Identify correctly the GIVEN .. WHEN .. THEN when writting the Test Function
 REM Use Helper Methods to initialize records, perform validations or operations
 REM Keep the Test Functions as simple and clean as you can
 
-$companyName = ""
-$serverInstance = ""
-$codeUnit = "50000"
+$companyName = "CRONUS International Ltd."
+$serverInstance = "BC200_DUMMY"
+$codeUnit = "1000000"
 
 ECHO Running Unit Tests..
 Invoke-NAVCodeunit -ServerInstance $serverInstance -CompanyName $companyName -CodeunitId $codeUnit
