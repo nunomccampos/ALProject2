@@ -3,21 +3,21 @@
   "name": "ALProject2",
   "publisher": "Default Publisher",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
+  "brief": "Unit Tests App.",
+  "description": "Unit Tests App.",
+  "privacyStatement": "http://74.234.122.65/",
+  "EULA": "http://74.234.122.65/",
+  "help": "http://74.234.122.65/",
+  "url": "http://74.234.122.65/",
+  "logo": "Logo.png",
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
   "application": "24.0.0.0",
   "idRanges": [
     {
-      "from": 50000,
-      "to": 50149
+      "from": 1000000,
+      "to": 75999999
     }
   ],
   "resourceExposurePolicy": {
@@ -27,6 +27,7 @@
   },
   "runtime": "13.0",
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ]
 }
