@@ -5,10 +5,10 @@
   "version": "1.0.0.0",
   "brief": "Unit Tests App.",
   "description": "Unit Tests App.",
-  "privacyStatement": "http://74.234.122.65/",
-  "EULA": "http://74.234.122.65/",
-  "help": "http://74.234.122.65/",
-  "url": "http://74.234.122.65/",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
   "logo": "Logo.png",
   "dependencies": [],
   "screenshots": [],
@@ -16,8 +16,8 @@
   "application": "24.0.0.0",
   "idRanges": [
     {
-      "from": 1000000,
-      "to": 75999999
+      "from": 50000,
+      "to": 50999
     }
   ],
   "resourceExposurePolicy": {
@@ -25,7 +25,7 @@
     "allowDownloadingSource": true,
     "includeSourceInSymbolFile": true
   },
-  "runtime": "13.0",
+  "runtime": "13.0" ,
   "features": [
     "NoImplicitWith",
     "TranslationFile"

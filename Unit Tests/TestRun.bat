@@ -8,7 +8,7 @@ REM Keep the Test Functions as simple and clean as you can
 
 $companyName = "CRONUS International Ltd."
 $serverInstance = "BC200_DUMMY"
-$codeUnit = "1000000"
+$codeUnit = "50000"
 
 ECHO Running Unit Tests..
 Invoke-NAVCodeunit -ServerInstance $serverInstance -CompanyName $companyName -CodeunitId $codeUnit

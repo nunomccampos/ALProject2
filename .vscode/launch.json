@@ -8,7 +8,7 @@
             "environmentType": "Sandbox",
             "server": "http://74.234.122.65/",
             "serverInstance": "BC200_DUMMY",
-            //"port": 5001,
+            "port": 5003,
             "authentication": "UserPassword",
             "startupObjectId": 22,
             "startupObjectType": "Page",

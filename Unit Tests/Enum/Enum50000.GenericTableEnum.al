@@ -1,5 +1,5 @@
 #pragma warning disable AA0215
-enum 1000000 GenericTableEnum
+enum 50000 GenericTableEnum
 #pragma warning restore AA0215
 {
     /*

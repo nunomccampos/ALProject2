@@ -1,5 +1,5 @@
 #pragma warning disable AA0215
-codeunit 1000000 UTCodeunit
+codeunit 50000 UTCodeunit
 #pragma warning restore AA0215
 {
     /*

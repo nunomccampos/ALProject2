@@ -1,5 +1,5 @@
 #pragma warning disable AA0215
-page 1000000 GenericTableList
+page 50000 GenericTableList
 #pragma warning restore AA0215
 {
     /*

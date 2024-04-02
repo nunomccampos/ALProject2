@@ -1,5 +1,5 @@
 #pragma warning disable AA0215
-table 1000000 GenericTable
+table 50000 GenericTable
 #pragma warning restore AA0215
 {
     /*
