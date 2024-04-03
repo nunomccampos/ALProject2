@@ -6,19 +6,16 @@
             "request": "launch",
             "type": "al",
             "environmentType": "Sandbox",
-            "server": "http://74.234.122.65/",
-            "serverInstance": "BC200_DUMMY",
-            "port": 5003,
-            "authentication": "UserPassword",
-            "startupObjectId": 22,
-            "startupObjectType": "Page",
+            "environmentName": "SandaBox_SQUAD",
+            "tenant": "bf1da7aa-1b64-4661-a12a-9530b23be0a2",
+            "startupObjectId": 22, // change this to your choice of startup object
             "breakOnError": "All",
+            "breakOnRecordWrite": "None",
             "launchBrowser": true,
-            "enableLongRunningSqlStatements": true,
             "enableSqlInformationDebugger": true,
-            "tenant": "default",
-            "usePublicURLFromServer": true,
-            //"schemaUpdateMode": "ForceSync"
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10
         }
     ]
 }
