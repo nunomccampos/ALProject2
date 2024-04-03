@@ -81,9 +81,9 @@ table 50000 GenericTable
         recTestTable: Record GenericTable;
         varAuxString: Text;
 #pragma warning disable AA0470
-        varDefaultItemDescriptionTxt: Label 'Item %1 ALIAS';
-        varCustomerDescriptionTxt: Label 'Customer %1 ALIAS';
-        varVendorDescriptionTxt: Label 'Vendor %1 ALIAS';
+        varDefaultItemDescriptionTxt: Label 'Item %1 ALIAS 3';
+        varCustomerDescriptionTxt: Label 'Customer %1 ALIAS 3';
+        varVendorDescriptionTxt: Label 'Vendor %1 ALIAS 3';
 #pragma warning restore AA0470
     begin
         Clear(recTestTable);
@@ -150,5 +150,6 @@ table 50000 GenericTable
                         Rec.Description := StrSubstNo(varDefaultItemDescriptionTxt, Rec."No.");
                 end;
         end;
+        Rec.Insert();
     end;
 }

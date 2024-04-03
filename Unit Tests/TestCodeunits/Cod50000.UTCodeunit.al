@@ -15,6 +15,13 @@ codeunit 50000 UTCodeunit
     procedure TestDefaultInsertMethod()
     var
         recTestTable: Record GenericTable;
+#pragma warning disable AA0470
+        varDefaultItemDescriptionTxt: Label 'Item %1 ALIAS';
+        varCustomerDescriptionTxt: Label 'Customer %1 ALIAS';
+        varVendorDescriptionTxt: Label 'Vendor %1 ALIAS';
+#pragma warning restore AA0470
+        i: Integer;
+        varDescriptionAux: Label 'IT000%1';
     begin
         // [SCENARIO] 
         // Insert an empty record and check if description matches the default behavior.
@@ -23,10 +30,96 @@ codeunit 50000 UTCodeunit
         // Generic Table Record
 
         // [WHEN] Insert a new record with An Empty description.
-        recTestTable.InsertNewTypedRecord(recTestTable."Entry Type"::Item, '');
+        for i := 1 to 9 do begin
+            // Empty Default
+            //InsertNewTypedRecord(recTestTable, recTestTable."Entry Type"::Item, 'testa esta merda direito');
+            // With Description
+            InsertNewTypedRecord(recTestTable, recTestTable."Entry Type"::Item, StrSubstNo(varDefaultItemDescriptionTxt, StrSubstNo(varDescriptionAux, i)));
 
-        // [THEN] should insert by default with ALIAS description.
-        CheckDefaultDescriptionFromTypedRecord(recTestTable."Entry Type"::Item);
+            // [THEN] should insert by default with ALIAS description.
+            CheckDefaultDescriptionFromTypedRecord(recTestTable."Entry Type"::Item);
+        end;
+    end;
+
+    procedure InsertNewTypedRecord(var pGenericTable: Record GenericTable; pEntryType: Enum GenericTableEnum; pDescription: Text)
+    var
+        recTestTable: Record GenericTable;
+        varAuxString: Text;
+#pragma warning disable AA0470
+        varDefaultItemDescriptionTxt: Label 'Item %1 ALIAS';
+        varCustomerDescriptionTxt: Label 'Customer %1 ALIAS';
+        varVendorDescriptionTxt: Label 'Vendor %1 ALIAS';
+#pragma warning restore AA0470
+    begin
+        if pGenericTable.FindLast() then
+            pGenericTable.ID += 1
+        else
+            pGenericTable.ID := 1;
+
+        pGenericTable."Entry Type" := pEntryType;
+        case pEntryType of
+            pEntryType::Customer:
+                begin
+                    Clear(recTestTable);
+                    recTestTable.SetRange("Entry Type", recTestTable."Entry Type"::Customer);
+                    if recTestTable.FindLast() then begin
+                        // Last Entry Type Customer 
+                        Clear(varAuxString);
+                        varAuxString := IncStr(recTestTable."No.");
+                        pGenericTable."No." := Format(varAuxString);
+                    end else
+                        // No Entry Type Customer
+                        pGenericTable."No." := 'CT0001';
+
+                    pGenericTable."Entry Type" := pEntryType;
+
+                    if (pDescription <> '') then
+                        pGenericTable.Description := CopyStr(pDescription, 1, MaxStrLen(pGenericTable.Description))
+                    else
+                        pGenericTable.Description := StrSubstNo(varCustomerDescriptionTxt, pGenericTable."No.");
+                end;
+            pEntryType::Vendor:
+                begin
+                    Clear(recTestTable);
+                    recTestTable.SetRange("Entry Type", recTestTable."Entry Type"::Vendor);
+                    if recTestTable.FindLast() then begin
+                        // Last Entry Type Vendor
+                        Clear(varAuxString);
+                        varAuxString := IncStr(recTestTable."No.");
+                        pGenericTable."No." := Format(varAuxString);
+                    end else
+                        // No Entry Type Vendor
+                        pGenericTable."No." := 'VD0001';
+
+                    pGenericTable."Entry Type" := pEntryType;
+
+                    if (pDescription <> '') then
+                        pGenericTable.Description := CopyStr(pDescription, 1, MaxStrLen(recTestTable.Description))
+                    else
+                        pGenericTable.Description := StrSubstNo(varVendorDescriptionTxt, pGenericTable."No.");
+                end;
+            pEntryType::Item:
+                begin
+                    Clear(recTestTable);
+                    recTestTable.SetRange("Entry Type", recTestTable."Entry Type"::Item);
+                    if recTestTable.FindLast() then begin
+                        // Last Entry Type Item
+                        Clear(varAuxString);
+                        varAuxString := IncStr(recTestTable."No.");
+                        pGenericTable."No." := Format(varAuxString);
+                    end else
+                        // No Entry Type Item
+                        pGenericTable."No." := 'IT0001';
+
+                    pGenericTable."Entry Type" := pEntryType;
+
+                    if (pDescription <> '') then
+                        pGenericTable.Description := CopyStr(pDescription, 1, MaxStrLen(recTestTable.Description))
+                    else
+                        pGenericTable.Description := StrSubstNo(varDefaultItemDescriptionTxt, pGenericTable."No.");
+                end;
+        end;
+        pGenericTable.Insert();
     end;
 
     // Creates the test helper method
@@ -43,17 +136,15 @@ codeunit 50000 UTCodeunit
 
     local procedure CheckDefaultDescriptionFromTypedRecord(pEntryType: Enum GenericTableEnum)
     var
-        recTestTable: Record GenericTable;
         varEntryTypeName: Text;
+        recGenericTable: Record GenericTable;
     begin
-        Clear(recTestTable);
-        recTestTable.SetRange("Entry Type", pEntryType);
-        if (recTestTable.FindLast()) then begin
+        Clear(recGenericTable);
+        recGenericTable.SetRange("Entry Type", pEntryType);
+        if (recGenericTable.FindLast()) then begin
             Clear(varEntryTypeName);
             varEntryTypeName := GetEnumValueName(pEntryType);
-            recTestTable.TestField(Description, StrSubstNo('%1 %2 %3', varEntryTypeName, recTestTable."No.", 'ALIAS'));
-            // Adapt to use the Assert Codeunit
-            //FIXME Assert.AreEqual(recTestTable.Description, StrSubstNo('%1 %2 %3', varEntryTypeName, recTestTable."No.", 'ALIAS'));
+            recGenericTable.TestField(Description, StrSubstNo('%1 %2 %3', varEntryTypeName, recGenericTable."No.", 'ALIAS'));
         end;
     end;
 

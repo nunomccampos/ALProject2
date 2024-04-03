@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="ALProject2.ENen.g">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3995196233 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generic Table Data</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Method 242545278 - NamedType 202334439" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item %1 ALIAS</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Method InsertNewTypedRecord - NamedType varDefaultItemDescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Method 242545278 - NamedType 3911766337" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer %1 ALIAS</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Method InsertNewTypedRecord - NamedType varCustomerDescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Method 242545278 - NamedType 895120585" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor %1 ALIAS</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Method InsertNewTypedRecord - NamedType varVendorDescriptionTxt</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Field 149522872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Field Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Field 3641927271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Field ID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3995196233 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table GenericTable - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 4105281732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record List</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control GroupName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Brief description of record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 149522872 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Type of record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control Entry Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 149522872 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control Entry Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 3768732020 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry Number of record.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control RecordID - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1176648079 - Control 3768732020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page GenericTableList - Control RecordID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2504430576 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum GenericTableEnum - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2504430576 - EnumValue 1994964448 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum GenericTableEnum - EnumValue Customer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2504430576 - EnumValue 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum GenericTableEnum - EnumValue Item - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2504430576 - EnumValue 1936001480 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum GenericTableEnum - EnumValue Vendor - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
